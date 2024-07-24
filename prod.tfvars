@@ -1,0 +1,5 @@
+rgname                  = "proddenq"
+location                = "West Europe"
+storageaccountname      = "sanrohanprod"
+access_tier             =  "Standard"
+Replication_type        = "GRS"

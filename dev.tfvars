@@ -1,0 +1,5 @@
+rgname                = "devbenq"
+location              = "East US"
+storageaccountname    = "sanrohandev"
+access_tier           = "Standard"
+Replication_type      = "GRS"
