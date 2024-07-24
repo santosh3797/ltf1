@@ -24,13 +24,14 @@ module "ResourceGroup" {
 }
 
 module "StorageAccount" {
+  depends_on         = [ module.ResourceGroup ]
   source             = "./Modules/StorageAccount"
   storageaccountname = var.storageaccountname
   ResourceGroup      = module.ResourceGroup.rg_name_out
   location           = var.location
   access_tier        = var.access_tier
   Replication_type   = var.Replication_type
-  depends_on         = [ module.ResourceGroup ]
+  
 }
 
 
