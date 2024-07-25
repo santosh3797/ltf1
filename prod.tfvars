@@ -1,5 +1,9 @@
 rgname                  = "proddenq"
 location                = "West Europe"
 storageaccountname      = "sanrohanprod"
-access_tier             =  "Standard"
+access_tier             = "Standard"
 Replication_type        = "GRS"
+vnetName                = "itsm-prod"
+addressSpace            = "[192.168.0.0/16]"
+subnetname              = ["itsm-app-subnet","itsm-web-subnet","itsm-db-subnet"]
+addressPrefix           = ["192.168.1.0/24","192.168.2.0/24","192.168.3.0/24"]

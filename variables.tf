@@ -17,3 +17,13 @@ variable "access_tier" {
 variable "Replication_type" {
   type = string
 }
+
+variable "vnetName" {
+  type = string
+}
+
+variable "addressSpace" {
+  type = list(string)
+}
+
+

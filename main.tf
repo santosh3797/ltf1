@@ -34,4 +34,23 @@ module "StorageAccount" {
   
 }
 
+module "vnet" {
+  source                 = "./Modules/VirtualNetwork"
+  vnetName               = var.vnetName
+  location               = var.location
+  resourceGroup          = module.ResourceGroup.rg_name_out
+  addressSpace           = var.addressSpace
+
+}
+
+/*module "subnet" {
+  source            = "./Modules/Subnet"
+  subnetname        = var.subnetname
+  resourceGroup     = var.rgname
+  location          = var.location
+  vnetName          = var.vnetName
+  addressPrefix     = var.addressPrefix
+
+}*/
+
 
